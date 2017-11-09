@@ -1,4 +1,4 @@
-﻿using Nancy;
+using Nancy;
 using Nancy.Bootstrapper;
 using Nancy.Conventions;
 using Nancy.TinyIoc;
@@ -13,7 +13,7 @@ namespace Hikari.Bootstrap
 	public class NancyBootstrap : DefaultNancyBootstrapper
 	{
 
-		private byte[] favicon;
+		/*private byte[] favicon;
 
 		protected override byte[] FavIcon
 		{
@@ -26,7 +26,7 @@ namespace Hikari.Bootstrap
 			favicon = new byte[ico.Length];
 			ico.Read(favicon, 0, favicon.Length);
 			return favicon;
-		}
+		}*/
 
 		protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
 		{
