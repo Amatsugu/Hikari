@@ -1,0 +1,32 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px auto;
+	grid-template-areas: 	"Head"
+							"Content"
+}
+
+
+#header
+{
+	grid-area: Head;
+	display: grid;
+	grid-template-columns: 50px auto;
+	grid-template-areas: "Logo Title";
+	grid-gap: 10px;
+}
+
+#header #logo
+{
+	grid-area: Logo;
+}
+
+#header #title
+{
+	grid-area: Title;
+	line-height: 50px;
+}
+
