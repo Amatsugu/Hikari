@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Hikari</title>
 		<link href="res/css/main.css" rel="stylesheet">
+		<script src="res/js/jquery-3.2.1.js"></script>
 		<script src="res/js/main.js"></script>
 	</head>
 	<body>
@@ -14,7 +15,18 @@
 				<img id="logo">
 				<div id="title">ヒカリ</div>
 			</div>
-			<div id="content"></div>
+			<div id="content">
+				<div class="colorPicker">
+					<div class="hueSlider">
+						<canvas></canvas>
+						<div class="handle"></div>
+					</div>
+					<div class="colorSpace">
+						<canvas></canvas>
+						<div class="selector"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

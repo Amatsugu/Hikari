@@ -12,7 +12,7 @@ namespace Hikari.Modules
 			Get("/", _ =>
 			{
 				return View["index"];
-			}, c => c.Request.UserHostAddress == c.Request.Headers.Host, "Home");
+			});
 		}
     }
 }

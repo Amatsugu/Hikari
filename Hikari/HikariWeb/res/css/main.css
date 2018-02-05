@@ -1,10 +1,11 @@
 body
 {
+	--accentColor: #ff0064;
 	margin: 0;
 	padding: 0;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 50px auto;
+	grid-template-rows: 80px auto;
 	grid-template-areas: 	"Head"
 							"Content"
 }
@@ -14,9 +15,10 @@ body
 {
 	grid-area: Head;
 	display: grid;
-	grid-template-columns: 50px auto;
+	grid-template-columns: 80px auto;
 	grid-template-areas: "Logo Title";
 	grid-gap: 10px;
+	box-shadow: 0px 0px 5px #00000090;
 }
 
 #header #logo
@@ -27,6 +29,8 @@ body
 #header #title
 {
 	grid-area: Title;
-	line-height: 50px;
+	line-height: 80px;
+	font-size: 40px;
+	color: var(--accentColor);
 }
 
